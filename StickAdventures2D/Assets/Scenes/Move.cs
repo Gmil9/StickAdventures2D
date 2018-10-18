@@ -35,6 +35,7 @@ public class Move : MonoBehaviour {
 
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
         anim.SetFloat("Speed", moveInput * speed);
+        anim.SetFloat("FallSpeed", rb.velocity.y);
 
         if (Input.GetKey(KeyCode.LeftArrow)){
             isLeft = true;
