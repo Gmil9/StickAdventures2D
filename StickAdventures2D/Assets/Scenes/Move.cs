@@ -68,32 +68,3 @@ public class Move : MonoBehaviour {
         }
     }
 }
-//Animator anim;
-//SpriteRenderer flip;
-//bool isLeft = false;
-
-//// Use this for initialization
-//void Start()
-//{
-//    anim = GetComponent<Animator>();
-//    flip = GetComponent<SpriteRenderer>();
-//}
-
-//// Update is called once per frame
-//void FixedUpdate()
-//{
-    //gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-    //Move();
-    //float moveH = Input.GetAxis("Horizontal");
-    //anim.SetFloat("Speed", moveH);
-    //float moveV = Input.GetAxis("Vertical");
-    //anim.SetFloat("SpeedV", moveV);
-
-    //if (isLeft == true)
-    //{
-    //    flip.flipX = true;
-    //}
-    //else
-    //{
-    //    flip.flipX = false;
-    //}

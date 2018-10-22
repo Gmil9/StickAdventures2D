@@ -4,12 +4,34 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour {
 
-    private void OnTriggerStay2D(Collider2D collision)
+    //currentObjects[]
+    //Doorway d;
+    //String puzzleCode;
+    //int Stars;
+
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "door" && Input.GetKeyDown(KeyCode.F))
-        {
-            Doorway d = collision.GetComponent<Doorway>();
-            d.teleport(gameObject);
-        }
+        //if door
+            //setObjects
+            //teleport
+            //getObjects
+            //getCode
+        //if interactable   
+            //toggleActive
+            //checkInteractions()
+        //if inventory object(stars)
+            //add to counter
     }
+
+    void checkInteractions(){
+        //String tempcode = ""
+        //for each(o in currentObjects)
+            //if o.isActive, tempcode add "1"
+            //if o.isNotActive, tempcode add "0"
+        //if tempcode == puzzleCode
+            //spawnStar()
+    }
+
 }
