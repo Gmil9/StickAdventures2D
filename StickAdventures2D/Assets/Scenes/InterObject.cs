@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class InterObject : MonoBehaviour {
 
-[CreateAssetMenu(menuName = ("Interactable Object"))]
-public class InterObject : ScriptableObject {
+    [SerializeField] GameObject partnerObject;
 
-    public bool isActivated = false;
-    [SerializeField] GameObject inActiveGO;
-    [SerializeField] GameObject ActiveGO;
-
-    public void toggleSprite(){
-        isActivated = !isActivated;
+    public void toggleActivation(){
+        gameObject.SetActive(false);
+        partnerObject.SetActive(true);
     }
 
 }

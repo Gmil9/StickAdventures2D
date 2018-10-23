@@ -6,18 +6,14 @@ public class Doorway : MonoBehaviour {
 
     [SerializeField] Transform spawnPoint;
     [SerializeField] string puzzleCode;
-    [SerializeField] InterObject[] currentObjects;
+    [SerializeField] GameObject[] currentRoomObjects; //the connecting rooms objects
 
     public void teleport(GameObject player){
         player.transform.position = spawnPoint.position;
     }
 
-    public InterObject[] getObjects(){
-        return currentObjects;
-    }
-
-    public void setObjects(InterObject[] objects){
-        currentObjects = objects;
+    public GameObject[] getObjects(){
+        return currentRoomObjects;
     }
 
     public string getCode(){

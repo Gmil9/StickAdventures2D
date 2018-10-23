@@ -6,6 +6,7 @@ TagManager:
   tags:
   - door
   - interactable
+  - inventory
   layers:
   - Default
   - TransparentFX
